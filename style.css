@@ -1,0 +1,111 @@
+*{
+    font-size: 1.2rem;
+    margin-left: 0;
+    margin-right: 0;
+    /* color: aqua; */
+}
+
+/* whole container which is being used as a background color */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(23, 52, 167), rgb(152, 41, 117));
+    padding: 10px;
+}
+
+/* to do cotainer panel */
+.todo-container{
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 50px 30px 50px;
+    margin: 50px auto 30px;
+    max-width: 65%;
+}
+
+/*  to do cotainer panel header */
+.todo-container h1{
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-around;
+    color: blueviolet;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* input and button container */
+.input-container{
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 2px;
+}
+
+/* input field decoration */
+input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 20px;
+    background: transparent;
+}
+
+/* button styling */
+button{
+    cursor: pointer;
+    border: none;
+    background-color: rgba(165, 112, 215, 0.604);
+    border-radius: 20px;
+    padding: 0px 20px 0px;
+}
+
+/* ul li */
+ul li {
+    /* display: flex;
+    justify-content: space-between; */
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    background-color: aliceblue;
+    padding: 4px;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -30px;
+    /* transform: translateY(-50%); */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+}
+
+/* checked item decoration */
+ul li.checked{
+    background-color: rgb(44, 222, 74);
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-color: rgb(107, 255, 91);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 2px;
+    padding: 0px 10px 0px;
+}
+span:hover{
+    color: red;
+    background-color:antiquewhite;
+    /* padding: 0px 10px 0px; */
+}
